@@ -1,3 +1,9 @@
-# Chat con React
+# Chat
 
-Descarga los archivos, ejecuta `npm install` y después `node server` para iniciar el servidor. Tendrás al aplicación disponible en [http://localhost:3000](http://localhost:3000)
+        This project was generated with ReactJs, NodeJS and normalize.
+
+# Live preview
+
+        Check the live preview right here.
+
+        https://chat-reactnodejs.herokuapp.com/
