@@ -1,0 +1,102 @@
+.chat-box {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Título */
+.title {
+  background-color: #009688;
+  margin: 0;
+  color: #D3DBDB;
+  padding: 8px;
+  font-weight: normal;
+  flex-shrink: 0;
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+  font-weight: bold;
+}
+.title>img{
+  width: 35px;
+}
+
+/* Lista de mensajes */
+.message-list {
+  flex-grow: 1;
+  padding: 0;
+  list-style-type: none;
+  overflow: auto;
+  margin: 0;
+  float: left;
+  width: 49%;
+}
+
+.message {
+  padding: .3em .8em;
+}
+
+.time-ago {
+  font-style: italic;
+  color: #009688;
+}
+
+.time-ago:before {
+  content: ' ';
+}
+
+/* Formulario para enviar nuevos mensajes */
+.chat-form {
+  margin-top: 5px;
+  display: flex;
+  flex-shrink: 0;
+  float: left;
+  width: 49%;
+  border: 1px solid #009688;
+  border-radius: 30px;
+}
+
+.username-input {
+  background-color: #ddd;
+}
+
+.body-input {
+  background-color: #eee;
+  flex-grow: 1;
+}
+
+.container{
+  display: block;
+
+}
+
+.input {
+  font-size: 18px;
+  border-width: 0;
+  display: block;
+  padding-left: .5em;
+  border-radius: 50px;
+}
+
+.button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-width: 0;
+  padding: .5em 2em;
+  font-size: 18px;
+  background-color: #009688;
+  color: #FFFFFF;
+  transition: background-color 300ms ease-out;
+  flex-shrink: 0;
+  height: 50px;
+  border-radius: 50px;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #007095;
+}
+
+.input:focus,
+.button:focus {
+  outline: none;
+}
