@@ -40,6 +40,10 @@ io.on('connection', function(socket){
   });
 });
 
-var server = http.listen(3000, function(){
-  console.log('Servidor escuchando en *:%s', server.address().port);
+const PORT = process.env.PORT || '3343';
+
+http.listen(PORT, function() {
+  const port = process.env.PORT || '3343';
+  console.log(`Listening on port ${PORT}`);
 });
+
